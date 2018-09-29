@@ -48,7 +48,7 @@ class Header extends Component {
     return (
       <header className={classes.root}>
         <MuiThemeProvider theme={realTheme}>
-          <AppBar className={classes.appBar}>
+          <AppBar className={classes.appBar} position={'static'}>
             <ToolBar className={classes.content}>
               <Grid xs>
                 <div className={classes.brand}>
