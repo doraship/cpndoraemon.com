@@ -10,21 +10,25 @@ const procedures = [
     title: 'GỬI YÊU CẦU GIAO HÀNG',
     content: 'Đăng nhập vào hệ thống của Giaohangmienbac.com để đặt hàng và kiểm tra tình trạng của đơn hàng',
     icon: 'description',
+    id: 0,
   },
   {
     title: 'Nhận hàng tận nơi gửi',
     content: 'Nhân viên của Giaohangmienbac.com sẽ đến tận nơi khách hàng yêu cầu để tiếp nhận và đóng gói hàng hóa',
     icon: 'place',
+    id: 1,
   },
   {
     title: 'Giao hàng & Thu hộ',
     content: 'Tiến hành giao và thu hộ tiền hàng giúp khách hàng. Đi kèm dịch vụ hỗ trợ giao lại 1 lần.',
     icon: 'local_shipping',
+    id: 2,
   },
   {
     title: 'Chuyển khoản tiền thu hộ',
     content: 'Chúng tôi sẽ chuyển tiền thu hộ vào tài khoản ngân hàng của quý khách đã đăng ký với Giaohangmienbac.com',
     icon: 'payment',
+    id: 3,
   },
 ];
 
@@ -47,7 +51,7 @@ const Procedure = (props) => {
         <Grid container spacing={32} justify={'center'} className={classes.procedureWrapper}>
           {
             procedures.map(procedure => (
-              <Grid item md xs={6} className={classes.procedureCard}>
+              <Grid item md xs={6} key={procedure.id} className={classes.procedureCard}>
                 <CardText {...procedure} />
               </Grid>
             ))

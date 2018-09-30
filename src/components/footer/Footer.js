@@ -12,7 +12,7 @@ const Footer = (props) => {
     <div className={classes.root}>
       <Grid container direction={'column'} className={classes.content}>
         <Grid item xs>
-          <Grid container xs className={classes.infomationWrapper}>
+          <Grid container className={classes.infomationWrapper}>
             <Grid item xs={1}>
               <img className={classes.logo} src={'/logo.png'} alt={''} width={'100%'} />
             </Grid>
@@ -22,7 +22,7 @@ const Footer = (props) => {
               </Typography>
               <Typography color={'textSecondary'} className={classes.link}>
                 <a href={'#'}>Facebook</a>
-                <div className={classes.vdivider}>/</div>
+                <span className={classes.vdivider}>/</span>
                 <a href={'#'}>Github</a>
               </Typography>
             </Grid>

@@ -9,6 +9,7 @@ const NavLink = withStyles(navLinkStyles)(Button);
 
 const NavBar = (props) => {
   const { classes } = props;
+
   return (
     <nav>
       <div className={classes.root}>

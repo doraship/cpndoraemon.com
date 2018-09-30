@@ -16,16 +16,18 @@ const Feature = (props) => {
           <ImageButton image={{ color: 'lightBlue' }}
                        children={
                          <Grid container>
-                           <Grid xs={3}>
+                           <Grid item xs={3}>
                              <Icon fontSize={'large'}>description</Icon>
                            </Grid>
-                           <Grid container xs>
-                             <Typography variant={'subheading'} className={classes.title}>
-                               TẠO ĐƠN HÀNG NHANH
-                             </Typography>
-                             <Typography variant={'caption'} className={classes.description}>
-                               Rút ngắn thời gian tạo đơn hàng
-                             </Typography>
+                           <Grid item xs>
+                             <Grid container>
+                               <Typography variant={'subheading'} className={classes.title}>
+                                 TẠO ĐƠN HÀNG NHANH
+                               </Typography>
+                               <Typography variant={'caption'} className={classes.description}>
+                                 Rút ngắn thời gian tạo đơn hàng
+                               </Typography>
+                             </Grid>
                            </Grid>
                          </Grid>
                        }
@@ -35,16 +37,18 @@ const Feature = (props) => {
           <ImageButton image={{ color: 'lightBlue' }}
                        children={
                          <Grid container>
-                           <Grid xs={3}>
+                           <Grid item xs={3}>
                              <Icon fontSize={'large'}>description</Icon>
                            </Grid>
-                           <Grid container xs>
-                             <Typography variant={'subheading'} className={classes.title}>
-                               TẠO ĐƠN HÀNG NHANH
-                             </Typography>
-                             <Typography variant={'caption'} className={classes.description}>
-                               Rút ngắn thời gian tạo đơn hàng
-                             </Typography>
+                           <Grid item xs>
+                             <Grid container>
+                               <Typography variant={'subheading'} className={classes.title}>
+                                 TẠO ĐƠN HÀNG NHANH
+                               </Typography>
+                               <Typography variant={'caption'} className={classes.description}>
+                                 Rút ngắn thời gian tạo đơn hàng
+                               </Typography>
+                             </Grid>
                            </Grid>
                          </Grid>
                        }
@@ -54,16 +58,18 @@ const Feature = (props) => {
           <ImageButton image={{ color: 'lightBlue' }}
                        children={
                          <Grid container>
-                           <Grid xs={3}>
+                           <Grid item xs={3}>
                              <Icon fontSize={'large'}>description</Icon>
                            </Grid>
-                           <Grid container xs>
-                             <Typography variant={'subheading'} className={classes.title}>
-                               TẠO ĐƠN HÀNG NHANH
-                             </Typography>
-                             <Typography variant={'caption'} className={classes.description}>
-                               Rút ngắn thời gian tạo đơn hàng
-                             </Typography>
+                           <Grid item xs>
+                             <Grid container>
+                               <Typography variant={'subheading'} className={classes.title}>
+                                 TẠO ĐƠN HÀNG NHANH
+                               </Typography>
+                               <Typography variant={'caption'} className={classes.description}>
+                                 Rút ngắn thời gian tạo đơn hàng
+                               </Typography>
+                             </Grid>
                            </Grid>
                          </Grid>
                        }

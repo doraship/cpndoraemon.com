@@ -11,9 +11,9 @@ const Procedure = (props) => {
   return (
     <section className={classes.root}>
       <div className={classes.content}>
-        <Grid container>
-          <Grid item xs={1} alignItems='center' justify='center'>
-            <img src={'/images/support-icon.png'} alt={''} />
+        <Grid container alignItems='center' justify='center'>
+          <Grid item xs={1}>
+            <img src={'/images/support-icon.png'} alt={''} width={'80%'} />
           </Grid>
           <Grid item xs={8}>
             <Typography variant={'title'} className={classes.textTitle}>

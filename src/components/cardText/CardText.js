@@ -20,7 +20,7 @@ const CardText = (props) => {
         </div>
       </div>
       <CardContent>
-        <Typography variant={'subheading'} className={[classes.textTitle, classes.textCenter]} color={'primary'}>
+        <Typography variant={'subheading'} className={classes.textTitle} color={'primary'}>
           {title}
         </Typography>
         <Typography component={'p'} color={'textPrimary'}>
