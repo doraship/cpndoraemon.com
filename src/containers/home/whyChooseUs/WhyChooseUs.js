@@ -11,36 +11,42 @@ const reasons = [
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'description',
     cols: 1,
+    id: 0,
   },
   {
     title: 'Tiết kiệm thời gian',
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'place',
     cols: 1,
+    id: 1,
   },
   {
     title: 'Miễn phí thu hộ (COD)',
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'local_shipping',
     cols: 1,
+    id: 2,
   },
   {
     title: 'Giao hàng trong 2h',
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'payment',
     cols: 1,
+    id: 3,
   },
   {
     title: 'đảm bảo an toàn nếu có sự cố',
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'payment',
     cols: 1,
+    id: 4,
   },
   {
     title: 'Tiền CoD được trả nhanh chóng',
     content: 'CPN Doraemon đã cung cấp dịch vụ vượt trội cho hơn 3000 doanh nghiệp với phương châm UY TÍN TIẾT KIỆM',
     icon: 'payment',
     cols: 1,
+    id: 5,
   },
 ];
 
@@ -48,8 +54,8 @@ const Reason = (props) => {
   const { title, content, icon, classes } = props;
   return (
     <div className={classes.reasonRoot}>
-      <Grid container className={classes.reasonContent}>
-        <Grid item xs={2} alignItems={'center'}>
+      <Grid container className={classes.reasonContent} alignItems={'center'}>
+        <Grid item xs={2}>
           <Icon color={'primary'} fontSize={'large'}>{icon}</Icon>
         </Grid>
         <Grid item xs={10}>
@@ -80,7 +86,7 @@ const WhyChooseUs = (props) => {
         <div className={classes.reasonWrapper}>
           <Grid container spacing={40}>
             {reasons.map(reason => (
-              <Grid item xs={4} alignItems={'center'}>
+              <Grid item xs={4} key={reason.id}>
                 <Reason {...reason} classes={classes} />
               </Grid>
             ))}

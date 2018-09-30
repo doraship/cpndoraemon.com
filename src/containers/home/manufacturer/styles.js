@@ -20,7 +20,10 @@ export default theme => ({
     paddingBottom: 60,
   },
   logoWrapper: {
-    padding: 30,
-    backgroundColor: 'whiteSmoke',
+    backgroundColor: '#f1f3f4',
+    height: 160,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

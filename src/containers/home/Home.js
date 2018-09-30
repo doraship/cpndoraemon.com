@@ -16,9 +16,11 @@ import { myTheme } from '../../constants';
 const slides = [
   {
     url: '/images/slides/1.png',
+    id: 0,
   },
   {
     url: '/images/slides/2.png',
+    id: 1,
   },
 ];
 

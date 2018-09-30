@@ -11,7 +11,7 @@ const ImageSlider = (props) => {
       autoplay: true,
       autoplaySpeed: 5000,
       fade: true,
-      pauseOnFocus: true,
+      pauseOnFocus: false,
       appendDots: dots => {
         return (
           <div>
@@ -27,12 +27,11 @@ const ImageSlider = (props) => {
 
     const Slides = props.slides.map(item => {
       return (
-        <div>
-          <img src={item.url}
-               alt={item.alt || ''}
-               height={props.imageSlideHeight || '100%'}
-               width={props.imageSlideWidth || '100%'} />
-        </div>
+        <img src={item.url}
+             key={item.id}
+             alt={item.alt || ''}
+             height={props.imageSlideHeight || '100%'}
+             width={props.imageSlideWidth || '100%'} />
       );
     });
 

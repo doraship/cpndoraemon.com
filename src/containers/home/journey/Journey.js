@@ -21,7 +21,7 @@ class Journey extends Component {
           </Grid>
           <Grid item xs={12} sm>
             <Typography variant={'title'} color={'primary'}>
-              Tra cứu hành trình
+              TRA CỨU ĐƠN HÀNG
             </Typography>
             <Grid container className={classes.wrapperTextField}>
               <TextField variant={'outlined'}
@@ -42,16 +42,18 @@ class Journey extends Component {
                 <ImageButton image={{ color: 'green' }}
                              children={
                                <Grid container>
-                                 <Grid xs={3}>
+                                 <Grid item xs={3}>
                                    <Icon fontSize={'large'}>description</Icon>
                                  </Grid>
-                                 <Grid container xs>
-                                   <Typography variant={'subheading'} className={classes.title}>
-                                     TẠO ĐƠN HÀNG NHANH
-                                   </Typography>
-                                   <Typography variant={'caption'} className={classes.description}>
-                                     Rút ngắn thời gian tạo đơn hàng
-                                   </Typography>
+                                 <Grid item xs>
+                                   <Grid container>
+                                     <Typography variant={'subheading'} className={classes.title}>
+                                       TẠO ĐƠN HÀNG NHANH
+                                     </Typography>
+                                     <Typography variant={'caption'} className={classes.description}>
+                                       Rút ngắn thời gian tạo đơn hàng
+                                     </Typography>
+                                   </Grid>
                                  </Grid>
                                </Grid>
                              }
@@ -59,10 +61,10 @@ class Journey extends Component {
               </Grid>
               <Grid item xs>
                 <Grid container alignItems={'center'} className={classes.hotline}>
-                  <Grid xs={3} className={classes.wrapperIcon}>
-                    <Icon fontSize={'large'} color={'textSecondary'}>face</Icon>
+                  <Grid item xs={3} className={classes.wrapperIcon}>
+                    <Icon fontSize={'large'} color={'disabled'}>face</Icon>
                   </Grid>
-                  <Grid xs container>
+                  <Grid item xs container>
                     <Typography variant={'subheading'}>
                       HOTLINE HỖ TRỢ
                     </Typography>

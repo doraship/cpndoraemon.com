@@ -7,24 +7,28 @@ import ButtonBase from '@material-ui/core/ButtonBase';
 
 const list = [
   {
-    company: 'Tiki',
-    url: 'https://tiki.vn',
-    logo: 'https://mediaz.vn/wp-content/uploads/2017/05/logo-tiki.png',
+    company: 'Lazada',
+    url: 'https://lazada.vn',
+    logo: 'https://laz-img-cdn.alicdn.com/images/ims-web/TB1f6tgdAfb_uJjSsD4XXaqiFXa.png',
+    id: 0,
   },
   {
     company: 'Tiki',
     url: 'https://tiki.vn',
     logo: 'https://mediaz.vn/wp-content/uploads/2017/05/logo-tiki.png',
+    id: 1,
   },
   {
     company: 'Tiki',
     url: 'https://tiki.vn',
     logo: 'https://mediaz.vn/wp-content/uploads/2017/05/logo-tiki.png',
+    id: 2,
   },
   {
     company: 'Tiki',
     url: 'https://tiki.vn',
     logo: 'https://mediaz.vn/wp-content/uploads/2017/05/logo-tiki.png',
+    id: 3,
   },
 ];
 
@@ -43,10 +47,10 @@ class Manufacturer extends Component {
           </div>
           <Grid container spacing={40} justify={'center'}>
             {list.map(item => (
-              <Grid item xs={4} md={3}>
+              <Grid item xs={4} md={3} key={item.id}>
                 <ButtonBase component={'a'} href={item.url} target={'_blank'}>
                   <div className={classes.logoWrapper}>
-                    <img src={item.logo} width={'100%'} alt={item.company} />
+                    <img src={item.logo} width={'75%'} alt={item.company} />
                   </div>
                 </ButtonBase>
               </Grid>

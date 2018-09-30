@@ -6,14 +6,12 @@ export default theme => ({
     overflow: 'visible',
     marginTop: 30,
   },
-  textCenter: {
-    textAlign: 'center',
-  },
   textTitle: {
     fontWeight: 600,
     textTransform: 'uppercase',
     paddingBottom: 10,
     paddingTop: 40,
+    textAlign: 'center',
   },
   iconContainer: {
     position: 'relative',
