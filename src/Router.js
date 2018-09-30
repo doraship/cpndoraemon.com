@@ -1,7 +1,7 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
-import Home from './containers/home';
-import NotFound from './components/error/notFound';
+import Home from './containers/Home';
+import NotFound from './components/error/NotFound';
 
 export default () => (
   <main>
