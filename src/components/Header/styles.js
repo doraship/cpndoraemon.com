@@ -85,7 +85,7 @@ export default theme => ({
   button: {
     margin: theme.spacing.unit,
   },
-  flex: {
+  flexCenter: {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -93,5 +93,8 @@ export default theme => ({
   navLink: {
     textDecoration: 'none',
     color: theme.palette.text,
+  },
+  textUppercase: {
+    textTransform: 'uppercase',
   },
 })

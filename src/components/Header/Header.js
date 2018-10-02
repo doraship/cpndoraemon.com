@@ -28,7 +28,7 @@ class Header extends Component {
                 <div className={classes.brand}>
                   <Link to={'/'}>
                     <img className={classes.logo} src={'/brand.png'} alt={''} />
-                    <Typography className={classes.title} variant={'title'}>
+                    <Typography className={[classes.title, classes.textUppercase].join(' ')} variant={'title'}>
                       {profile.shortName}
                     </Typography>
                   </Link>
@@ -49,7 +49,7 @@ class Header extends Component {
                 </div>
               </Grid>
               <Grid item xs>
-                <div className={classes.flex}>
+                <div className={classes.flexCenter}>
                   <div className={classes.grow} />
                   <Button className={classes.button}
                           variant={'outlined'}
