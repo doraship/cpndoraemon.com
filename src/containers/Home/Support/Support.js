@@ -31,7 +31,7 @@ const Procedure = (props) => {
               Hotline hỗ trợ
             </Typography>
             <Typography variant={'title'} className={classes.textTitle}>
-              0123456789
+              0966990380
             </Typography>
           </Grid>
         </Grid>
