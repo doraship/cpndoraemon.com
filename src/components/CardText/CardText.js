@@ -9,7 +9,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 const CardText = (props) => {
 
-  const { classes, title, content, icon } = props;
+  const { classes, name, description, icon } = props;
 
   return (
     <Card classes={{
@@ -24,10 +24,10 @@ const CardText = (props) => {
       </Hidden>
       <CardContent>
         <Typography variant={'subheading'} className={classes.textTitle} color={'primary'}>
-          {title}
+          {name}
         </Typography>
         <Typography component={'p'} color={'textPrimary'}>
-          {content}
+          {description}
         </Typography>
       </CardContent>
     </Card>

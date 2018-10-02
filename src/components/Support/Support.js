@@ -7,7 +7,7 @@ import Hidden from '@material-ui/core/Hidden';
 
 const Procedure = (props) => {
 
-  const { classes } = props;
+  const { classes, title, description, hotLine } = props;
 
   return (
     <section className={classes.root}>
@@ -20,10 +20,10 @@ const Procedure = (props) => {
           </Hidden>
           <Grid item md={8} xs={12}>
             <Typography variant={'title'} className={classes.textTitle}>
-              Bạn cần trợ giúp?
+              {title}
             </Typography>
             <Typography component={'p'} color={'textSecondary'}>
-              Bạn có thể liên hệ với chúng tôi để được giải quyết những thắc mắc
+              {description}
             </Typography>
           </Grid>
           <Grid item md xs={12}>
@@ -31,7 +31,7 @@ const Procedure = (props) => {
               Hotline hỗ trợ
             </Typography>
             <Typography variant={'title'} className={classes.textTitle}>
-              0966990380
+              {hotLine}
             </Typography>
           </Grid>
         </Grid>
