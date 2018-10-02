@@ -29,7 +29,7 @@ class Home extends Component {
       <MuiThemeProvider theme={myTheme}>
         <Header {...headerInfo} profile={profile} />
         <div className={classes.root}>
-          <ImageSlider classes={{root: classes.slider}} {...homePageInfo.slider} />
+          <ImageSlider {...homePageInfo.slider} />
           <Journey classes={{ root: classes.maxWidth1208 }}
                    {...homePageInfo.journey}
                    hotLine={profile.hotLine} />

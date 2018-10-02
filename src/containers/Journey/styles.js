@@ -3,7 +3,7 @@ export default theme => ({
     flexGrow: 1,
   },
   content: {
-    paddingTop: 60,
+    paddingTop: 40,
     paddingBottom: 60,
     [theme.breakpoints.down('md')]: {
       padding: 20,
