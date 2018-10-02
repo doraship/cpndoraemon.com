@@ -6,6 +6,7 @@ import CardActions from '@material-ui/core/CardActions';
 import Button from '@material-ui/core/Button';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
+import { Link } from 'react-router-dom';
 
 const CardPrice = (props) => {
   const { classes } = props;
@@ -31,10 +32,18 @@ const CardPrice = (props) => {
         </CardContent>
       {/*</CardActionArea>*/}
       <CardActions className={classes.center}>
-      <Button variant={'outlined'} size="small" color="primary">
+      <Button variant={'outlined'}
+              size="small"
+              color="primary"
+              component={Link}
+              to={props.createOrderHref}
+      >
       Tạo đơn hàng
       </Button>
-      <Button size="small" color="primary">
+      <Button size="small"
+              color="primary"
+              component={Link}
+              to={props.moreInfoHref}>
       Tìm hiểu thêm
       </Button>
       </CardActions>

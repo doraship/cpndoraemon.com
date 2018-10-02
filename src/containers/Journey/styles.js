@@ -25,10 +25,14 @@ export default theme => ({
     padding: 18,
   },
   title: {
+    fontWeight: 600,
+    textTransform: 'uppercase',
+  },
+  buttonName: {
     color: 'white',
     fontWeight: 600,
   },
-  description: {
+  buttonDescription: {
     color: 'white',
   },
   wrapperButtons: {

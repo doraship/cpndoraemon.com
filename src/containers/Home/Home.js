@@ -1,28 +1,24 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
 import styles from './styles';
 import ImageSlider from '../../components/ImageSlider';
-import Journey from './Journey/Journey';
-import Feature from './Feature/Feature';
-import Price from './Price/Price';
-import Procedure from './Procedure/Procedure';
-import Support from './Support/Support';
-import WhyChooseUs from './WhyChooseUs/WhyChooseUs';
-import Manufacturer from './Manufacturer/Manufacturer';
-import { myTheme } from '../../constants';
-
-const slides = [
-  {
-    url: '/images/slides/1.png',
-    id: 0,
-  },
-  {
-    url: '/images/slides/2.png',
-    id: 1,
-  },
-];
+import Journey from '../Journey/Journey';
+import Feature from '../Feature/Feature';
+import Price from '../../components/Price';
+import Procedure from '../../components/Procedure';
+import Support from '../../components/Support';
+import WhyChooseUs from '../../components/WhyChooseUs';
+import Manufacturer from '../../components/Manufacturer';
+import Header from '../../components/Header';
+import Footer from '../../components/Footer';
+import {
+  myTheme,
+  homePage as homePageInfo,
+  header as headerInfo,
+  footer as footerInfo,
+  profile,
+} from '../../constants';
 
 class Home extends Component {
 
@@ -30,27 +26,24 @@ class Home extends Component {
     const { classes } = this.props;
 
     return (
-      <div className={classes.root}>
-        <MuiThemeProvider theme={myTheme}>
-          <ImageSlider className={classes.slider}
-                       slides={slides} />
-          <div className={classes.maxWidth1208}>
-            <Journey />
-            <Feature />
-          </div>
-          <Price />
-          <div className={classes.maxWidth1208}>
-            <Procedure />
-          </div>
-          <Support />
-          <div className={classes.maxWidth1208}>
-            <WhyChooseUs />
-          </div>
-          <Manufacturer />
-        </MuiThemeProvider>
-      </div>
+      <MuiThemeProvider theme={myTheme}>
+        <Header {...headerInfo} profile={profile} />
+        <div className={classes.root}>
+          <ImageSlider classes={{root: classes.slider}} {...homePageInfo.slider} />
+          <Journey classes={{ root: classes.maxWidth1208 }}
+                   {...homePageInfo.journey}
+                   hotLine={profile.hotLine} />
+          <Feature classes={{ root: classes.maxWidth1208 }} {...homePageInfo.feature} />
+          <Price {...homePageInfo.price} />
+          <Procedure classes={{ root: classes.maxWidth1208 }} {...homePageInfo.procedure} />
+          <Support {...homePageInfo.support} hotLine={profile.hotLine} />
+          <WhyChooseUs classes={{ root: classes.maxWidth1208 }} {...homePageInfo.whyChooseUs} />
+          <Manufacturer {...homePageInfo.manufacturer} />
+        </div>
+        <Footer {...footerInfo} profile={profile} />
+      </MuiThemeProvider>
     );
   }
 }
 
-export default withRouter(connect()(withStyles(styles)(Home)));
+export default connect()(withStyles(styles)(Home));

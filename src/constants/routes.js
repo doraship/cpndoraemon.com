@@ -1,9 +1,12 @@
-export default {
-  about: '/about',
-  contact: '/contact',
-  home: '/',
-  signin: '/signin',
-  signup: '/signup',
+export default function () {
+  const URLS = {
+    about: '/about',
+    contact: '/contact',
+    home: '/',
+    none: '#',
+    signin: '/signin',
+    signup: '/signup',
+  };
 
-  none: '#',
-};
+  return name => (URLS[name] || URLS.none);
+}

@@ -7,12 +7,12 @@ import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Icon from '@material-ui/core/Icon';
 import Button from '@material-ui/core/Button';
-import ImageButton from '../../../components/ImageButton';
+import ImageButton from '../../components/ImageButton';
 
 class Journey extends Component {
 
   render() {
-    const { classes } = this.props;
+    const { classes, title, hotLine } = this.props;
 
     return (
       <section className={classes.root}>
@@ -23,8 +23,8 @@ class Journey extends Component {
             </Grid>
           </Hidden>
           <Grid item xs={12} sm>
-            <Typography variant={'title'} color={'primary'}>
-              TRA CỨU ĐƠN HÀNG
+            <Typography variant={'title'} color={'primary'} className={classes.title}>
+              {title}
             </Typography>
             <Grid container className={classes.wrapperTextField}>
               <TextField variant={'outlined'}
@@ -46,18 +46,18 @@ class Journey extends Component {
                   <ImageButton image={{ color: 'green' }}
                                children={
                                  <Grid container>
-                                   <Hidden xsDown>
-                                     <Grid item md={3} className={classes.center}>
-                                       <Icon fontSize={'large'}>description</Icon>
+                                   <Grid item md={3} xs={1} className={classes.center}>
+                                     <Icon fontSize={'large'}>description</Icon>
+                                   </Grid>
+                                   <Grid item md xs>
+                                     <Grid container  direction={'column'} alignItems={'flex-start'}>
+                                       <Typography variant={'subheading'} className={classes.buttonName}>
+                                         TẠO ĐƠN HÀNG NHANH
+                                       </Typography>
+                                       <Typography variant={'caption'} className={classes.buttonDescription}>
+                                         Rút ngắn thời gian tạo đơn hàng
+                                       </Typography>
                                      </Grid>
-                                   </Hidden>
-                                   <Grid item md>
-                                     <Typography variant={'subheading'} className={classes.title}>
-                                       TẠO ĐƠN HÀNG NHANH
-                                     </Typography>
-                                     <Typography variant={'caption'} className={classes.description}>
-                                       Rút ngắn thời gian tạo đơn hàng
-                                     </Typography>
                                    </Grid>
                                  </Grid>
                                }
@@ -75,7 +75,7 @@ class Journey extends Component {
                         HOTLINE HỖ TRỢ
                       </Typography>
                       <Typography variant={'title'} color={'primary'}>
-                        0966990380
+                        {hotLine}
                       </Typography>
                     </Grid>
                   </Grid>

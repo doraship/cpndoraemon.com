@@ -9,9 +9,10 @@ const ImageSlider = (props) => {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 5000,
+      autoplaySpeed: 3000,
       fade: true,
       pauseOnFocus: false,
+      lazyLoad: true,
       appendDots: dots => {
         return (
           <div>
@@ -25,11 +26,11 @@ const ImageSlider = (props) => {
       },
     };
 
-    const Slides = props.slides.map(item => {
+    const Slides = props.images.map(image => {
       return (
-        <img src={item.url}
-             key={item.id}
-             alt={item.alt || ''}
+        <img src={image.url}
+             key={image.id}
+             alt={image.alt || ''}
              height={props.imageSlideHeight || '100%'}
              width={props.imageSlideWidth || '100%'} />
       );

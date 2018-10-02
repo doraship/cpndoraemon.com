@@ -7,7 +7,7 @@ import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
 
 const Footer = (props) => {
-  const { classes } = props;
+  const { classes, profile } = props;
 
   return (
     <div className={classes.root}>
@@ -21,14 +21,12 @@ const Footer = (props) => {
             </Hidden>
             <Grid item md={4} xs={12} className={classes.information}>
               <Typography color={'textSecondary'}>
-                Material is an adaptable system of guidelines, components, and tools that support the best practices of
-                user interface design. Backed by open-source code, Material streamlines collaboration between designers
-                and developers, and helps teams quickly build beautiful products.
+                {props.PR}
               </Typography>
               <Typography color={'textSecondary'} className={classes.link}>
-                <a href={'#'}>Facebook</a>
+                <a href={profile.facebook.url} target='_blank'>Facebook</a>
                 <span className={classes.vdivider}>/</span>
-                <a href={'#'}>Github</a>
+                <a href={profile.github.url} target='_blank'>Github</a>
               </Typography>
             </Grid>
           </Grid>
@@ -37,7 +35,7 @@ const Footer = (props) => {
           <Divider />
           <div className={classes.copyright}>
             <Typography color={'textSecondary'}>
-              Copyright © 2018 CPN Doraemon. All rights reserved.
+              {props.copyright}
             </Typography>
           </div>
         </Grid>
