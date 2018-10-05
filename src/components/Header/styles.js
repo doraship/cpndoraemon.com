@@ -6,6 +6,7 @@ export default theme => ({
   },
   appBar: {
     backgroundColor: 'white',
+    boxShadow: '0 2px 2px -2px rgba(0,0,0,.15)',
   },
   content: {
     maxWidth: 1208,

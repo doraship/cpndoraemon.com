@@ -5,9 +5,10 @@ import styles from './styles';
 import Divider from '@material-ui/core/Divider';
 import Grid from '@material-ui/core/Grid';
 import Hidden from '@material-ui/core/Hidden';
+import { profile, footer as footerInfo } from '../../constants'
 
 const Footer = (props) => {
-  const { classes, profile } = props;
+  const { classes } = props;
 
   return (
     <div className={classes.root}>
@@ -21,7 +22,7 @@ const Footer = (props) => {
             </Hidden>
             <Grid item md={4} xs={12} className={classes.information}>
               <Typography component={'p'} color={'textSecondary'}>
-                {props.PR}
+                {footerInfo.PR}
               </Typography>
               <div className={classes.addressWrapper}>
                 <Typography color={'textSecondary'}>
@@ -43,7 +44,7 @@ const Footer = (props) => {
           <Divider />
           <div className={classes.copyright}>
             <Typography color={'textSecondary'}>
-              {props.copyright}
+              {footerInfo.copyright}
             </Typography>
           </div>
         </Grid>
