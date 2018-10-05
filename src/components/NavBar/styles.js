@@ -1,6 +1,6 @@
 export default theme => ({
   root: {
-    backgroundColor: theme.palette.primary.main,
+    // backgroundColor: theme.palette.primary.main,
   },
   content: {
     maxWidth: 1208,
@@ -11,7 +11,7 @@ export default theme => ({
 
 export const navLinkStyles = theme => ({
   label: {
-    color: 'white',
+    color: theme.palette.primary.main,
     fontWeight: 400,
   },
   root: {

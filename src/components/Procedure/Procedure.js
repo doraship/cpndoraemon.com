@@ -7,10 +7,10 @@ import CardText from '../CardText';
 
 const Procedure = (props) => {
 
-  const { classes, procedures, title, description } = props;
+  const { classes, procedures, title, description, id } = props;
 
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id={id ? id : ''}>
       <div className={classes.content}>
         <div className={classes.textCenter}>
           <Typography variant={'title'} className={classes.textTitle} color={'primary'}>

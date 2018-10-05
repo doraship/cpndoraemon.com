@@ -14,9 +14,14 @@ const NavBar = (props) => {
       <div className={classes.root}>
         <div className={classes.content}>
           {menus.map(menu => (
-            <NavLink component={Link} to={menu.url} key={menu.id}>
-              {menu.name}
-            </NavLink>
+            menu.url.charAt(0) === '#' ?
+              <NavLink component={'a'} href={menu.url} key={menu.id}>
+                {menu.name}
+              </NavLink>
+              :
+              <NavLink component={Link} to={menu.url} key={menu.id}>
+                {menu.name}
+              </NavLink>
           ))}
         </div>
       </div>

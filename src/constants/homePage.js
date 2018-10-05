@@ -45,6 +45,7 @@ export default {
   price: {
     title: 'Bảng giá vận chuyển',
     description: '',
+    id: 'bang-gia',
     products: [
       {
         location: 'Nội thành Hà Nội',
@@ -67,6 +68,7 @@ export default {
   procedure: {
     title: 'Quy trình vận chuyển',
     description: '',
+    id: 'quy-trinh',
     procedures: [
       {
         name: 'Gửi yêu cầu giao hàng',
@@ -97,6 +99,7 @@ export default {
   support: {
     title: 'Bạn cần trợ giúp?',
     description: 'Bạn có thể liên hệ với chúng tôi để được giải quyết những thắc mắc',
+    id: 'lien-he',
   },
   whyChooseUs: {
     title: 'Vì sao bạn nên chọn Chuyển phát nhanh Doraemon',
@@ -149,6 +152,7 @@ export default {
   manufacturer: {
     title: 'Đối tác của Chuyển phát nhanh Doraemon',
     description: '',
+    id: 'doi-tac',
     companies: [
       {
         name: 'Lazada',
