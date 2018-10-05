@@ -7,17 +7,14 @@ import ToolBar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Grid from '@material-ui/core/Grid';
-import Input from '@material-ui/core/Input';
-import IconButton from '@material-ui/core/IconButton';
-import Icon from '@material-ui/core/Icon';
 import { Link } from 'react-router-dom';
-import { myTheme } from '../../constants';
+import { myTheme, header as headerInfo, profile } from '../../constants';
 import NavBar from '../NavBar';
 
 class Header extends Component {
 
   render() {
-    const { classes, profile } = this.props;
+    const { classes } = this.props;
 
     return (
       <header className={classes.root}>
@@ -37,7 +34,7 @@ class Header extends Component {
                 </div>
               </Grid>
               <Grid item xs={7}>
-                <NavBar {...this.props.navBar} />
+                <NavBar {...headerInfo.navBar} />
                 {/*<div className={classes.search}>*/}
                 {/*<Input placeholder={'Mã đơn hàng...'}*/}
                 {/*disableUnderline*/}

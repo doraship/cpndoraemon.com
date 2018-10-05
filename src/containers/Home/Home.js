@@ -15,8 +15,6 @@ import Footer from '../../components/Footer';
 import {
   myTheme,
   homePage as homePageInfo,
-  header as headerInfo,
-  footer as footerInfo,
   profile,
 } from '../../constants';
 
@@ -27,7 +25,7 @@ class Home extends Component {
 
     return (
       <MuiThemeProvider theme={myTheme}>
-        <Header {...headerInfo} profile={profile} />
+        <Header />
         <div className={classes.root}>
           <ImageSlider {...homePageInfo.slider} />
           <Journey classes={{ root: classes.maxWidth1208 }}
@@ -40,7 +38,7 @@ class Home extends Component {
           <WhyChooseUs classes={{ root: classes.maxWidth1208 }} {...homePageInfo.whyChooseUs} />
           <Manufacturer {...homePageInfo.manufacturer} />
         </div>
-        <Footer {...footerInfo} profile={profile} />
+        <Footer />
       </MuiThemeProvider>
     );
   }
