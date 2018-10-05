@@ -2,12 +2,12 @@ export default {
   slider: {
     images: [
       {
-        url: '/images/slides/1.png',
+        url: '/images/slides/cpn-cover1.png',
         href: '',
         id: 0,
       },
       {
-        url: '/images/slides/2.png',
+        url: '/images/slides/cpn-cover2.png',
         href: '',
         id: 1,
       },
@@ -156,19 +156,31 @@ export default {
       {
         name: 'Tiki',
         url: 'https://tiki.vn',
-        logo: 'https://mediaz.vn/wp-content/uploads/2017/05/logo-tiki.png',
+        logo: '/images/doi-tac/tiki.png',
         id: 1,
       },
       {
         name: 'Shopee',
         url: 'https://shopee.vn/',
-        logo: 'https://png2.kisspng.com/sh/9d74ae6e44bfbb04ad6d784a2b79d150/L0KzQYm3V8EzN5s0g9t8c4Dxd37zjBdwNZN3edDtLXbyfsW0kBhweJZqRadrNEe1QIO7VvM4a2E4RqcEMEa0R4OCUcU0OWQ9T6s9MES3RIW1kP5o/kisspng-logo-brand-font-shopee-5b4720246c7c03.5906172915313879404444.png',
+        logo: '/images/doi-tac/shopee.png',
         id: 2,
       },
       {
         name: 'GHTK',
         url: 'https://giaohangtietkiem.vn/',
         logo: 'https://giaohangtietkiem.vn/wp-content/themes/giaohangtk/images/logo.png',
+        id: 3,
+      },
+      {
+        name: 'Stepup',
+        logo: '/images/doi-tac/stepup.png',
+        url: 'http://stepup.edu.vn/',
+        id: 3,
+      },
+      {
+        name: 'Ohui',
+        logo: '/images/doi-tac/ohui.png',
+        url: 'http://www.ohui.co.kr/en/main.jsp',
         id: 3,
       },
     ],

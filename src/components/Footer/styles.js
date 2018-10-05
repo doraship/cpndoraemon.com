@@ -51,4 +51,9 @@ export default theme => ({
       marginBottom: 10,
     },
   },
+  addressWrapper: {
+    borderLeft: 'solid 2px gray',
+    paddingLeft: 8,
+    marginTop: 4,
+  }
 });

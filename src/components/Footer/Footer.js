@@ -20,9 +20,17 @@ const Footer = (props) => {
               </Grid>
             </Hidden>
             <Grid item md={4} xs={12} className={classes.information}>
-              <Typography color={'textSecondary'}>
+              <Typography component={'p'} color={'textSecondary'}>
                 {props.PR}
               </Typography>
+              <div className={classes.addressWrapper}>
+                <Typography component={'p'} color={'textSecondary'}>
+                  Địa chỉ: {profile.address}.
+                </Typography>
+                <Typography component={'p'} color={'textSecondary'}>
+                  Số điện thoại: {profile.hotLine}.
+                </Typography>
+              </div>
               <Typography color={'textSecondary'} className={classes.link}>
                 <a href={profile.facebook.url} target='_blank'>Facebook</a>
                 <span className={classes.vdivider}>/</span>
