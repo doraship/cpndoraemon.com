@@ -2,16 +2,19 @@ export default {
   slider: {
     images: [
       {
-        url: '/images/slides/cpn-cover1.png',
+        url: '/images/slides/cpn-cover1.jpg',
         href: '',
         id: 0,
       },
       {
-        url: '/images/slides/cpn-cover2.png',
+        url: '/images/slides/cpn-cover2.jpg',
         href: '',
         id: 1,
       },
     ],
+    settings: {
+      autoplaySpeed: 5000,
+    },
   },
   journey: {
     title: 'Tra cứu đơn hàng',
