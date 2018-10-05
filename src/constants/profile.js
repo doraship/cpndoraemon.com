@@ -1,6 +1,6 @@
 export default {
-  name: 'Chuyển phát nhanh Doraemon',
-  shortName: 'CPN Doraemon',
+  name: 'Chuyển phát Doraemon',
+  shortName: 'Doraemon',
   logo: '/logo.png',
   brandLogo: '/brand.png',
   hotLine: '0966990380',

@@ -8,10 +8,10 @@ import CardPrice from '../CardPrice/index';
 class Price extends Component {
 
   render() {
-    const { classes, products, title } = this.props;
+    const { classes, products, title, id } = this.props;
 
     return (
-      <section className={classes.root}>
+      <section className={classes.root} id={id ? id : ''}>
         <div className={classes.content}>
           <div className={classes.textCenter}>
             <Typography variant={'title'} className={classes.textWhiteTitle}>

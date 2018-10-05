@@ -7,10 +7,10 @@ import Hidden from '@material-ui/core/Hidden';
 
 const Procedure = (props) => {
 
-  const { classes, title, description, hotLine } = props;
+  const { classes, title, description, hotLine, id } = props;
 
   return (
-    <section className={classes.root}>
+    <section className={classes.root} id={id ? id : ''}>
       <div className={classes.content}>
         <Grid container alignItems='center' justify='center'>
           <Hidden xsDown>

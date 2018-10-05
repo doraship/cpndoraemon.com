@@ -28,10 +28,10 @@ const Reason = (props) => {
 
 const WhyChooseUs = (props) => {
 
-  const { classes, reasons, title } = props;
+  const { classes, reasons, title, id } = props;
 
   return (
-    <section className={classes.root}>
+    <section className={classes.root}  id={id ? id : ''}>
       <div className={classes.content}>
         <div className={classes.textCenter}>
           <Typography variant={'title'} className={classes.textTitle} color={'primary'}>

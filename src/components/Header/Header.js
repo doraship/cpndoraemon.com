@@ -26,27 +26,30 @@ class Header extends Component {
             <Grid container alignItems={'center'}>
               <Grid item xs>
                 <div className={classes.brand}>
-                  <Link to={'/'}>
-                    <img className={classes.logo} src={'/brand.png'} alt={''} />
-                    <Typography className={[classes.title, classes.textUppercase].join(' ')} variant={'title'}>
-                      {profile.shortName}
-                    </Typography>
+                  <Link to={'/'} className={classes.navLink}>
+                    <Grid container alignItems={'center'}>
+                      <img className={classes.logo} src={'/logo.png'} alt={''} />
+                      <Typography className={[classes.title, classes.textUppercase].join(' ')} variant={'title'}>
+                        {profile.shortName}
+                      </Typography>
+                    </Grid>
                   </Link>
                 </div>
               </Grid>
-              <Grid item xs={3}>
-                <div className={classes.search}>
-                  <Input placeholder={'Mã đơn hàng...'}
-                         disableUnderline
-                         classes={{
-                           root: classes.inputRoot,
-                           input: classes.inputInput,
-                         }}
-                  />
-                  <IconButton className={classes.searchButton}>
-                    <Icon className={classes.searchIcon}>search</Icon>
-                  </IconButton>
-                </div>
+              <Grid item xs={7}>
+                <NavBar {...this.props.navBar} />
+                {/*<div className={classes.search}>*/}
+                {/*<Input placeholder={'Mã đơn hàng...'}*/}
+                {/*disableUnderline*/}
+                {/*classes={{*/}
+                {/*root: classes.inputRoot,*/}
+                {/*input: classes.inputInput,*/}
+                {/*}}*/}
+                {/*/>*/}
+                {/*<IconButton className={classes.searchButton}>*/}
+                {/*<Icon className={classes.searchIcon}>search</Icon>*/}
+                {/*</IconButton>*/}
+                {/*</div>*/}
               </Grid>
               <Grid item xs>
                 <div className={classes.flexCenter}>
@@ -69,7 +72,7 @@ class Header extends Component {
               </Grid>
             </Grid>
           </ToolBar>
-          <NavBar {...this.props.navBar} />
+          {/*<NavBar {...this.props.navBar} />*/}
         </AppBar>
       </header>
     );

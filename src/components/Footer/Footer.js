@@ -24,10 +24,10 @@ const Footer = (props) => {
                 {props.PR}
               </Typography>
               <div className={classes.addressWrapper}>
-                <Typography component={'p'} color={'textSecondary'}>
+                <Typography color={'textSecondary'}>
                   Địa chỉ: {profile.address}.
                 </Typography>
-                <Typography component={'p'} color={'textSecondary'}>
+                <Typography component={'p'} href={'#'} color={'textSecondary'}>
                   Số điện thoại: {profile.hotLine}.
                 </Typography>
               </div>
