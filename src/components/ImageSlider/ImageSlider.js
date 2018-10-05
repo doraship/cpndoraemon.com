@@ -7,28 +7,29 @@ const ImageSlider = (props) => {
 
   const { classes } = props;
 
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    fade: true,
-    lazyLoad: true,
-    // appendDots: dots => {
-    //   return (
-    //     <div>
-    //       <ul style={{
-    //         marginTop: '-60px',
-    //       }}>
-    //         {dots}
-    //       </ul>
-    //     </div>
-    //   );
-    // },
-  };
+  const settings = Object.assign({
+      dots: true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 3000,
+      fade: true,
+      lazyLoad: true,
+      // appendDots: dots => {
+      //   return (
+      //     <div>
+      //       <ul style={{
+      //         marginTop: '-60px',
+      //       }}>
+      //         {dots}
+      //       </ul>
+      //     </div>
+      //   );
+      // },
+    },
+    props.settings);
 
   const Slides = props.images.map(image => {
     return (
