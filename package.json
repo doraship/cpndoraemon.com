@@ -4,6 +4,7 @@
   "private": true,
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "fs-extra": "^7.0.0",
     "react-snap": "^1.19.0"
   },
   "dependencies": {
