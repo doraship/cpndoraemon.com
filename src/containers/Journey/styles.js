@@ -50,4 +50,7 @@ export default theme => ({
     justifyContent: 'center',
     alignContent: 'center',
   },
+  linkButton: {
+    textDecoration: 'none',
+  },
 })

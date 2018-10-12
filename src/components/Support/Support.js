@@ -27,12 +27,18 @@ const Procedure = (props) => {
             </Typography>
           </Grid>
           <Grid item md xs={12}>
-            <Typography variant={'subheading'} color={'textSecondary'}>
-              Hotline hỗ trợ
-            </Typography>
-            <Typography variant={'title'} className={classes.textTitle}>
-              {hotLine}
-            </Typography>
+            <Grid container>
+              <a href={'tel:' + hotLine} className={classes.linkButton}>
+                <div className={classes.boxWhite1px}>
+                  <Typography variant={'subheading'} color={'textSecondary'}>
+                    Hotline hỗ trợ
+                  </Typography>
+                  <Typography variant={'title'} className={classes.textTitle}>
+                    {hotLine}
+                  </Typography>
+                </div>
+              </a>
+            </Grid>
           </Grid>
         </Grid>
       </div>

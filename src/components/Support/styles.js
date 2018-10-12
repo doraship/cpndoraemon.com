@@ -25,12 +25,11 @@ export default theme => ({
     textTransform: 'uppercase',
     color: 'white',
   },
-  procedureWrapper: {
-    marginTop: 20,
+  linkButton: {
+    textDecoration: 'none',
   },
-  procedureCard: {
-    [theme.breakpoints.down('md')]: {
-      marginBottom: 15,
-    },
+  boxWhite1px: {
+    border: 'solid 1px white',
+    padding: 15,
   },
 });

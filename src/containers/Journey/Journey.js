@@ -50,7 +50,7 @@ class Journey extends Component {
                                      <Icon fontSize={'large'}>description</Icon>
                                    </Grid>
                                    <Grid item md xs>
-                                     <Grid container  direction={'column'} alignItems={'flex-start'}>
+                                     <Grid container direction={'column'} alignItems={'flex-start'}>
                                        <Typography variant={'subheading'} className={classes.buttonName}>
                                          TẠO ĐƠN HÀNG NHANH
                                        </Typography>
@@ -64,21 +64,25 @@ class Journey extends Component {
                   />
                 </Grid>
                 <Grid item xs>
-                  <Grid container alignItems={'center'} className={classes.hotline}>
-                    <Hidden xsDown>
-                      <Grid item md={3} className={classes.center}>
-                        <Icon fontSize={'large'} color={'disabled'}>face</Icon>
+                  <a href={'tel:' + hotLine} className={classes.linkButton}>
+                    <Grid container alignItems={'center'} className={classes.hotline}>
+                      <Hidden xsDown>
+                        <Grid item md={3} className={classes.center}>
+                          <Icon fontSize={'large'} color={'disabled'}>face</Icon>
+                        </Grid>
+                      </Hidden>
+                      <Grid item md>
+
+                        <Typography variant={'subheading'}>
+                          HOTLINE HỖ TRỢ
+                        </Typography>
+                        <Typography variant={'title'} color={'primary'}>
+                          {hotLine}
+                        </Typography>
+
                       </Grid>
-                    </Hidden>
-                    <Grid item md>
-                      <Typography variant={'subheading'}>
-                        HOTLINE HỖ TRỢ
-                      </Typography>
-                      <Typography variant={'title'} color={'primary'}>
-                        {hotLine}
-                      </Typography>
                     </Grid>
-                  </Grid>
+                  </a>
                 </Grid>
               </Grid>
             </Hidden>
