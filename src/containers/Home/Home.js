@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withStyles, MuiThemeProvider } from '@material-ui/core/styles';
+import Hidden from '@material-ui/core/Hidden';
 import styles from './styles';
 import ImageSlider from '../../components/ImageSlider';
 import Journey from '../Journey/Journey';
@@ -12,6 +13,7 @@ import WhyChooseUs from '../../components/WhyChooseUs';
 import Manufacturer from '../../components/Manufacturer';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
+import CallNow from '../../components/CallNow';
 import {
   myTheme,
   homePage as homePageInfo,
@@ -26,6 +28,9 @@ class Home extends Component {
     return (
       <MuiThemeProvider theme={myTheme}>
         <Header />
+        <Hidden lgUp>
+          <CallNow hotLine={profile.hotLine} />
+        </Hidden>
         <div className={classes.root}>
           <ImageSlider {...homePageInfo.slider} />
           <Journey classes={{ root: classes.maxWidth1208 }}
